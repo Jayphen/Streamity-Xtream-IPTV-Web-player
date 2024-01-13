@@ -1,14 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="IPTVEditor Web Player"
-    />
+    <meta name="description" content="IPTVEditor Web Player" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -25,16 +22,20 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>IPTVEditor Web Player</title>
-    
-    <script src="/config.js"></script>
-    <link rel="stylesheet" href="/config.css">
 
-    <link rel="stylesheet" href="/asset/bootstrap.min.css">
+    <script>
+      /*----- DNS -----*/
+      //Iptv provider dns url (for example "http://domain.com:80")
+      window.dns = "%REACT_APP_IPTV_PROVIDER%";
+    </script>
+    <script src="/config.js"></script>
+    <link rel="stylesheet" href="/config.css" />
+
+    <link rel="stylesheet" href="/asset/bootstrap.min.css" />
     <script src="/asset/jquery-3.4.1.slim.min.js"></script>
 
-    <script src="/asset/bootstrap.bundle.min.js" ></script>    
+    <script src="/asset/bootstrap.bundle.min.js"></script>
     <script src="/asset/fawesome.js" crossorigin="anonymous"></script>
-
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
